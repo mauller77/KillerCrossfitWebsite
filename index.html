@@ -1,14 +1,81 @@
 <html>
 
     <head>
-    <link rel="stylesheet" href="index.css">
-    
+        <link rel="stylesheet" href="index.css">
+        <meta content="text/html" http-equiv="Content-Type" />
+        <title>Killer Crossfit</title>
     </head>
 
     <body>
-    
-        Killer Crossfit Website
+        <div id="kc_main_header">
+            <img src="images/KillerCrossfitLogo.jpeg" id="kc_logo">
+            <div id="kc_title">Killer Crossfit</div>
+        </div>
+        
+        <div id="nav_bar">
+            <div class="nav_item">
+                <div class="dropdown_header" id="nutrition_header">Nutrition</div>
+                <div class="dropdown_container" id="nutrition_dropdown_container">
+                    <div class="dropdown_item" id="nutrition_dropdown_item">Nutrition 1</div>
+                    <div class="dropdown_item" id="nutrition_dropdown_item">Nutrition 2</div>
+                    <div class="dropdown_item" id="nutrition_dropdown_item">Nutrition 3</div>
+                </div>
+            </div>
+            <div class="nav_item">
+                <div class="dropdown_header" id="training_header">Training</div>
+                <div class="dropdown_container" id="training_dropdown_container">
+                    <div class="dropdown_item">Training 1</div>
+                    <div class="dropdown_item">Training 2</div>
+                    <div class="dropdown_item">Training 3</div>
+                </div>
+            </div>
+            <div class="nav_item">
+                <div class="dropdown_header" id="about_header">About</div>
+                <div class="dropdown_container" id="about_dropdown_container">
+                    <div class="dropdown_item">About 1</div>
+                    <div class="dropdown_item">About 2</div>
+                    <div class="dropdown_item">About 3</div>
+                </div>
+            </div>
+        </div>
+        
         
     </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#nutrition_header").hover(
+                function(){ 
+                    $("#nutrition_dropdown_container").css('display', 'block');      
+                },
+                function(){
+                    $("#nutrition_dropdown_container").css('display','none');
+                }
+            );
+            
+            $("#training_header").hover(
+                function(){ 
+                    $("#training_dropdown_container").css('display', 'block');      
+                },
+                function(){
+                    $("#training_dropdown_container").css('display','none');
+                }
+            );
+            
+            $("#about_header").hover(
+                function(){ 
+                    $("#about_dropdown_container").css('display', 'block');      
+                },
+                function(){
+                    $("#about_dropdown_container").css('display','none');
+                }
+            );
+            
+
+        });
+    </script>
 
 </html>

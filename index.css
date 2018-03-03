@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
 body{
     width: 100vw;
     height: 100vh;
     background-color: aqua;
+    padding: 0px;
+    margin: 0px;
 }
+
+#kc_main_header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    background-color: coral;
+}
+#kc_logo{
+    width: 100px;
+    float: left;
+}
+#kc_title{
+    text-align: center;
+    background-color: coral;
+    font-size: 80px;
+    font-family: 'Patua One', fantasy;
+}
+
+#nav_bar{
+    width: 100%;
+    margin-top: 100px;
+    position: fixed;
+    text-align: center;
+}
+
+.nav_item{
+    text-align: center;
+    width: 20vw;
+    display: inline-block;
+    float: left;
+}
+.dropdown_header{
+    width: 100%;
+}
+.dropdown_container{
+    display: none;
+}
+.dropdown_item{
+   
+}
+
